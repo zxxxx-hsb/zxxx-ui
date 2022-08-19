@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <zx-button type="primary">button</zx-button>
+    <zx-button type="stroke">button</zx-button>
+    <zx-button>button</zx-button>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    
   }
 }
 </script>

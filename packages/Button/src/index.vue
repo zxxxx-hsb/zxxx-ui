@@ -1,23 +1,56 @@
 <template>
-  <div class="zx-button">
-    <slot></slot>
+  <div class="zx-button-wrap"
+  :class="disabled?'disabled':''">
+    <button
+      @click="handleClick"
+      :disabled="disabled"
+      :type="nativeType"
+      :class="[
+      type ? 'zx-button-' + type : '',
+      disabled?'disabled':''
+      ]"
+      >
+      <span><slot></slot></span>
+    </button>
   </div>
 </template>
-
 <script>
 export default {
   name: 'zx-button',
   props: {
-    type: String
+    type: {
+      type: String,
+      default: 'default'
+    },
+    icon: {
+      type: String,
+      default: ''
+    },
+    nativeType: {
+      type: String,
+      default: 'button'
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    loading: Boolean,
+    // disabled: Boolean,
+    // round: Boolean,
+    // circle: Boolean
+  },
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    handleClick(evt) {
+      this.$emit('click', evt);
+    }
   }
 }
 </script>
-
-<style scoped>
-  .zx-button {
-      display: inline-block;
-      padding: 3px 6px;
-      background: #000;
-      color: #fff;
-  }
+<style lang="scss" scoped>
+  @import "./css/button.scss";
 </style>

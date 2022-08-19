@@ -1,0 +1,12 @@
+@mixin btn-size-default {
+    appearance: none;
+    font-weight: 400;
+    outline: 0;
+    cursor: pointer;
+    border: 0;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 16px;
+    border-radius: 2px;
+    min-width: 74px;
+}

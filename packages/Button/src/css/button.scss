@@ -1,0 +1,49 @@
+@import '../../../../examples/style/mixin.scss';
+
+.zx-button-wrap {
+    display: inline-block;
+
+    .zx-button-default {
+        @include btn-size-default;
+        background: $Brand;
+        color: $White;
+
+        &:hover {
+            background: $HoverBrand;
+        }
+
+        &:active {
+            background: $ActiveBrand;
+        }
+    }
+
+    .zx-button-circle {
+        @include btn-size-default;
+        background: $Brand;
+        color: $White;
+        border-radius: 10px;
+    }
+
+    .zx-button-stroke {
+        @include btn-size-default;
+        background: #fff;
+        border: 1px solid $Brand;
+        color: $Brand;
+
+        &:hover {
+            background: #edf8f4;
+            color: #1da373;
+        }
+
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+    }
+
+    .disabled {
+        pointer-events: none;
+        user-select: none;
+        background: $DisabledBrand;
+    }
+}

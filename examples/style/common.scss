@@ -1,0 +1,53 @@
+// color
+// 主题色
+$Brand: #1DA373;
+$HoverBrand: #49B58E;
+$StrokeBrand: #E7F9F3;
+$ActiveBrand: #17815B;
+$DisabledBrand: #B5E1D1;
+// 成功色
+$Success: #2DA641;
+$BorderSuccess: #66BE74;
+$BackgroundSuccess: #F0FAF2;
+// 错误色
+$Error: #EC4A3A;
+$BorderError: #F37D7D;
+$BackgroundError: #FFF0F0;
+// 告警色
+$Warning: #B19A3A;
+$BorderWarning: #FED128;
+$BackgroundWarning: #FFFDED;
+// 文字色
+$MainTitle: #292E38; // 大标题色
+$SubTitle: #3D464C; // 小标题色
+$PlaceholderText: #8A8F93; // placeholder色
+$DisabledText: #BCC1C5; // 文字disabeld状态色
+// 边框色
+$InputBorder: #D8DCE3; // 输入框边框色、进度条配色
+$StrokeBorder: #D5DEE7; // 描边按钮边框色、分割线色
+$TableBorder: #E1EAF1; // 表格分割线色
+// 背景色
+$PageBg: #E9EEF4; // 页面大背景
+$ModuleBg: #F5F7FA; // 表格头部背景色，表单label背景色
+$StripeBg: #F9FAFB; // 表格斑马纹背景色
+
+$White: #fff;
+
+// font
+$Family: Microsoft Yahei, Arial, PingFangSC-Regular;
+$Font18: 18px;
+$Font16: 16px;
+$Font14: 14px;
+$Font12: 12px;
+
+.main_title {
+    font-size: $Font16;
+    color: $MainTitle;
+}
+
+.table_text {
+    color: $SubTitle;
+    font-size: $Font12;
+}
+
+// distance
